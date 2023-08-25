@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback Form</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<section>
+		<h1>Feedback Form</h1>
+		<form action="submit.php" method="post">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" required minlength="3" maxlength="50" id="name" name="name">
+			</div>
 
+			<div>
+				<label for="portfolio">Portfolio</label>
+				<input type="url" required id="portfolio" name="portfolio">
+			</div>
+
+			<div>
+				<label for="favcolor">Favorite Color</label>
+				<input type="color" id="favcolor" name="favcolor">
+			</div>
+
+			<div>
+				<label for="likeness">Likeness</label>
+				<input type="range" min="1" max="100" id="likeness" name="likeness">
+			</div>
+			
+			<button type="submit">Submit</button>
+		</form>
+	</section>
 </body>
-
 </html>
